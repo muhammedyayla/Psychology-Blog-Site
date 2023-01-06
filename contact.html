@@ -1,106 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
     <link rel="apple-touch-icon" sizes="60x60" href="img/page-mini-logo.png" />
     <link rel="icon" type="image/x-icon" href="img/page-mini-logo.png" />
     <link rel="stylesheet" href="contact.css" />
     <title>Contact</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="#">
-        <img src="img/logo son.png" alt="" />
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+</head>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link contact" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logo son.png" alt="" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link contact" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
     </nav>
     <div class="jumbotron">
-      <div class="container contact-container">
-        <h1 class="display-6 text-light">Contact With Me</h1>
-        <p>We are with you whenever you need in your life.</p>
-      </div>
+        <div class="container contact-container">
+            <h1 class="display-6 text-light">Contact With Me</h1>
+            <p>We are with you whenever you need in your life.</p>
+        </div>
     </div>
     <div class="container contact-container">
-      <div class="row">
-        <div id="contact-icon" class="col-lg-4 contact-col">
-          <div class="contact-icon fa fa-phone fa-2x"></div>
-          <div class="inner">
-            <h4 class="inner-title">Contact With Phone Number</h4>
-            <p>
-                <a href="https://chat.whatsapp.com/EwS8sFabf2bEDYqFmH0wsf">+44 444 444 44</a>
-              </p>
-          </h4>
-        </div>
-        </div>
-        <div  class="col-lg-3 contact-col">
-          <div class="contact-icon fa fa-envelope fa-2x"></div>
-          <div class="inner">
-            <h4 class="inner-title">Email Address</h4>
-              <p>
-                <a href="mailto:duhanseherli@example.com">duhantherapy@gmail.com</a>
-              </p>
-          </div>
-        </div>
-        <div onmouseover="this.style.backgroun ='#4bb4fa'" id="contact-icon" class="col-lg-4 contact-col">
-          <div class="contact-icon fa fa-location-arrow fa-2x"></div>
+        <div class="row">
+            <div id="contact-icon" class="col-lg-4 contact-col">
+                <div onclick="gowhatsapp()" class="contact-icon fa fa-phone fa-2x">
+                </div>
+                <div class="inner">
+                    <h4 class="inner-title">Contact With Phone Number</h4>
+                    <p>
+                        <a href="https://wa.me/905330806525" target="_blank">+44 444 444 44</a>
+                    </p>
+                    </h4>
+                </div>
+            </div>
+            <div class="col-lg-3 contact-col">
+                <div onclick="goMail()" class="contact-icon fa fa-envelope fa-2x">
+                </div>
+                <div class="inner">
+                    <h4 class="inner-title">Email Address</h4>
+                    <p>
+                        <a href="mailto:duhanseherli@gmail.com" target="_blank">duhantherapy@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+            <div onmouseover="this.style.backgroun ='#4bb4fa'" id="contact-icon" class="col-lg-4 contact-col">
+                <div onclick="goLocation()" class="contact-icon fa fa-location-arrow fa-2x"></div>
 
-          <div class="inner">
-            <h4 class="inner-title">Location</h4>
-            <p>
-                <a href="https://www.google.com/maps/place/Yenik%C3%B6y,+T%C3%BCrk+Bostan%C4%B1+Sk.,+34464+Sar%C4%B1yer%2F%C4%B0stanbul/@41.1245035,29.0570069,17z/data=!3m1!4b1!4m5!3m4!1s0x14caca88c836065d:0x1025ffc057b0ee65!8m2!3d41.1244995!4d29.0591956">5678 Bangla Main Road, cities 580
-                    GBnagla, example 54786</a>
-              </p>
-          </div>
+                <div class="inner">
+                    <h4 class="inner-title">Location</h4>
+                    <p>
+                        <a target="_blank"
+                            href="https://www.google.com/maps/place/Yenik%C3%B6y,+T%C3%BCrk+Bostan%C4%B1+Sk.,+34464+Sar%C4%B1yer%2F%C4%B0stanbul/@41.1245035,29.0570069,17z/data=!3m1!4b1!4m5!3m4!1s0x14caca88c836065d:0x1025ffc057b0ee65!8m2!3d41.1244995!4d29.0591956">5678
+                            Bangla Main Road, cities 580
+                            GBnagla, example 54786</a>
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-    <script>
+</body>
+<script>
+    function gowhatsapp() {
+        var anchor = document.createElement('a');
+        anchor.href = 'https://wa.me/905330806525';
+        anchor.target = "_blank";
+        anchor.click();
+    }
+    function goMail() {
+        window.location.href = "mailto:duhantherapy@gmail.com";
+    }
+    function goLocation() {
+        var anchor = document.createElement('a');
+        anchor.href = 'https://www.google.com/maps/place/Yenik%C3%B6y,+T%C3%BCrk+Bostan%C4%B1+Sk.,+34464+Sar%C4%B1yer%2F%C4%B0stanbul/@41.1245035,29.0570069,17z/data=!3m1!4b1!4m5!3m4!1s0x14caca88c836065d:0x1025ffc057b0ee65!8m2!3d41.1244995!4d29.0591956';
+        anchor.target = "_blank";
+        anchor.click();
+    }
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 
-    </script>
-  </body>
 </html>

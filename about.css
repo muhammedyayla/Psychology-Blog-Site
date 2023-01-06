@@ -16,8 +16,8 @@
   .navbar{
     position: inherit;
     width: 100%;
-    border-bottom: 1px solid #FFCF33;
-    box-sizing: border-box;
+    border-bottom: 1px solid rgb(223, 223, 223);
+    background-color:  #fdf2cd;
 }
 
 .navbar a{
@@ -41,8 +41,8 @@
     margin: 3px;
     margin-left: 0px;
     padding: 2px;
-
 }
+
   ::selection {
     /* Appearance Declarations */
       background: #FFE799;
