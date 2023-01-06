@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="contact.css" />
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+      }
+      form input,
+      form textarea,
+      form button {
+        padding: 20px;
+        margin-bottom: 20px;
+        outline: none;
+        border: none;
+        background-color: #ddd;
+      }
+      I form button {
+        background-color: #333;
+        cursor: pointer;
+      }
+    </style>
+    <title>Contact</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo son.png" alt="" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link contact" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <!-- <form class="form-inline my-2 my-lg-0">
+        <input
+          class="form-control mr-sm-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">
+          Search
+        </button>
+      </form> -->
+      </div>
+    </nav>
+    <section class="contact-sec sec-pad">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="contact-detail">
+              <h1 style="margin-top: 20%;" class="section-title">Contact us</h1>
+
+              <ul class="contact-ul">
+                <li>
+                  <i class="fa fa-location-arrow"></i>
+                  <a class="location-info"
+                    href="https://www.google.com/maps/place/Yenik%C3%B6y,+T%C3%BCrk+Bostan%C4%B1+Sk.,+34464+Sar%C4%B1yer%2F%C4%B0stanbul/@41.1245035,29.0570069,17z/data=!3m1!4b1!4m5!3m4!1s0x14caca88c836065d:0x1025ffc057b0ee65!8m2!3d41.1244995!4d29.0591956"
+                    >91, Ram Nagar, Ram Mandir, Delhi</a
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-phone"></i>
+                  <a href="tel:08510004495"><b>0255000XXXX</b></a>
+                </li>
+
+                <li>
+                  <i class="fa fa-envelope"></i>
+                  <a href="mailto:muhammedeminyayla321@gmail.com"
+                    ><b> duhantherapy@gmail.com</b></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <form class="contact_form" action="#">
+              <input class="name" type="text" placeholder="Name.." />
+              <input class="subject" type="text" placeholder="Subject.." />
+              <input class="email" type="email" placeholder="Email.." />
+              <textarea
+                class="msg"
+                cols="5"
+                rows="5"
+                placeholder="Your message.."
+              ></textarea>
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      const form = document.querySelector(".contact_form")
+      function sendMsg(e) {
+        e.preventDefault();
+          const name = document.querySelector(".name"),
+                subject = document.querySelector(".subject"),
+                email = document.querySelector(".email"),
+                msg = document.querySelector(".msg");
+        // Function Send Email
+        Email.send({
+          SecureToken: "4913b614-6072-4f1a-8ceb-7a987ce9581a",
+          To: "duhantherapy@gmail.com",
+          From: email.value,
+          Subject: subject.value,
+          Body: msg.value,
+        }).then((message) => alert("The email successfully sent."));
+      }
+      form.addEventListener('submit', sendMsg);
+    </script>
+    <!-- <script src="contact.js"></script> -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
